@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "igg"
   gem.homepage = "http://github.com/eiffelqiu/igg"
   gem.license = "GPL2"
-  gem.summary = %Q{ImpactJS Game Generator}
-  gem.description = %Q{ImpactJS Game Generator for fast development}
+  gem.summary = %Q{ImpactJS Game Gadget}
+  gem.description = %Q{Several tools for fast developing an ImpactJS Game, include generators and built-in server to run the game and weltmeister level editor right in the current project folder without require apache server and PHP configuration.}
   gem.email = "eiffelqiu@qq.com"
   gem.authors = ["eiffel qiu"]
   gem.executables = ['igg']

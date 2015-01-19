@@ -1,4 +1,6 @@
-## ImpactJS Game Generator.
+## ImpactJS Game Gadget.
+
+Several tools for fast developing an ImpactJS Game, include generators and built-in server to run the game and weltmeister level editor right in the current project folder without require apache server and PHP configuration.
 
 
 ### Installation
