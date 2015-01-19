@@ -31,3 +31,14 @@
 ### Generate an ImpactJS Game Entity
 
     $ cb entity player 
+
+### Run Server mode to play the game
+
+    $ igg server  ## open 'http://localhost:4567' in browser
+![igg server usage](https://raw.github.com/eiffelqiu/igg/master/doc/screen1.png)
+
+### Run Server mode to run weltmeister level editor
+
+    $ igg server  ## open 'http://localhost:4567/weltmeister' in browser
+![weltmeister usage](https://raw.github.com/eiffelqiu/igg/master/doc/screen2.png)    
+
