@@ -1,0 +1,28 @@
+ig.module(
+	'game.entities.<%= @name %>'
+)
+.requires(
+	'impact.entity'
+)
+.defines(function(){
+
+Entity<%= @name.capitalize %> = ig.Entity.extend({
+	
+	size: {x:<%= @width %>, y:<%= @height %>},
+	collides: ig.Entity.COLLIDES.ACTIVE,
+	
+	animSheet: new ig.AnimationSheet( 'media/<%= @name %>.png', <%= @width %>, <%= @height %> ),
+	
+	bounciness: 1,
+	
+	init: function( x, y, settings ) {
+		this.parent( x, y, settings );
+		
+		this.addAnim( 'idle', 1, [0] );
+		
+		this.vel.x = -100;
+		this.vel.y = 100;
+	}
+});
+
+});

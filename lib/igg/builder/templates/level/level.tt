@@ -1,0 +1,8 @@
+ig.module( 'game.levels.<%= @name.downcase %>' )
+.requires( 'impact.image' )
+.defines(function(){
+Level<%= @name.capitalize %>=/*JSON[*/{
+	"entities": [],
+	"layer": []
+}/*]JSON*/;
+});
