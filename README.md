@@ -1,6 +1,10 @@
 ## ImpactJS Game Gadget.
 
-Several tools for fast developing an ImpactJS Game, include generators and built-in server to run the game and weltmeister level editor right in the current project folder without require apache server and PHP configuration.
+Several tools for fast developing an ImpactJS Game, include generators and built-in server to run the game and weltmeister level editor right in the current project folder without requiring apache http server and PHP configuration.
+
+### Requirement
+
+    Ruby 1.9.x or later (tested)
 
 ### Installation
 
