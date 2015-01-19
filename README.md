@@ -2,7 +2,6 @@
 
 Several tools for fast developing an ImpactJS Game, include generators and built-in server to run the game and weltmeister level editor right in the current project folder without require apache server and PHP configuration.
 
-
 ### Installation
 
     $ gem install igg 
@@ -11,10 +10,10 @@ Several tools for fast developing an ImpactJS Game, include generators and built
 
     $ igg 
 	Commands:
-	  igg entity [NAME]   # generate an ImpactJS Game entity
+	  igg entity [name]   # generate an ImpactJS Game entity
 	  igg help [COMMAND]  # Describe available commands or one specific command
-	  igg level [NAME]    # generate an ImpactJS Game level
-	  igg project [NAME]  # generate an ImpactJS Game project
+	  igg level [name]    # generate an ImpactJS Game level
+	  igg project [name]  # generate an ImpactJS Game project
 
 ### Generate an ImpactJS Game project
 

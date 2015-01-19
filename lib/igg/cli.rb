@@ -7,6 +7,14 @@ require 'thor'
 require_relative 'ext/string_extention'
 %w[project entity level].each { |task| require_relative "builder/#{task}_builder" }
 
+########################################################
+##
+## reference code from Chris Darroch's 'impactrb'
+## code:   https://github.com/chrisdarroch/impactrb
+##
+## I adpated it to run in current impact project folder
+##
+########################################################
 class Server < Sinatra::Base
 
   set :public_folder, Dir.pwd
