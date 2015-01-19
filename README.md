@@ -14,34 +14,31 @@
 	  igg level [NAME]    # generate an ImpactJS Game level
 	  igg project [NAME]  # generate an ImpactJS Game project
 
-	Options:
-	  -w, [--width=N]   # width
-	                    # Default: 320
-	  -h, [--height=N]  # height
-	                    # Default: 240
-
 ### Generate an ImpactJS Game project
 
     $ cb project phone   # default width=320 height=240     	  
 
 ### Generate an ImpactJS Game Level
 
-    $ cb level shooting   
+    $ cb level shooting  # default width=320 height=240  
 
 ### Generate an ImpactJS Game Entity
 
-    $ cb entity player 
+    $ cb entity player # default width=16 height=16 
 
 ### Run Server mode to play the game
 
     $ igg server  
 ![igg server usage](https://raw.github.com/eiffelqiu/igg/master/doc/screen1.png)
+
 	open 'http://localhost:4567' in browser
 ![play impact game usage](https://raw.github.com/eiffelqiu/igg/master/doc/screen3.png)
 
 ### Run Server mode to run weltmeister level editor
 
     $ igg server 
+
     open 'http://localhost:4567/weltmeister' in browser
+
 ![weltmeister usage](https://raw.github.com/eiffelqiu/igg/master/doc/screen2.png)    
 
