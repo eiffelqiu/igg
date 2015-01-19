@@ -17,15 +17,15 @@ Several tools for fast developing an ImpactJS Game, include generators and built
 
 ### Generate an ImpactJS Game project
 
-    $ cb project phone   # default width=320 height=240     	  
+    $ igg project phone   # default width=320 height=240     	  
 
 ### Generate an ImpactJS Game Level
 
-    $ cb level shooting  # default width=320 height=240  
+    $ igg level shooting  # default width=320 height=240  
 
 ### Generate an ImpactJS Game Entity
 
-    $ cb entity player # default width=16 height=16 
+    $ igg entity player # default width=16 height=16 
 
 ### Run Server mode to play the game
 
