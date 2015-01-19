@@ -28,11 +28,18 @@
 
 ### Run Server mode to play the game
 
-    $ igg server  
+    $ igg server   ## Must Run in an ImpactJS project folder
+
 ![igg server usage](https://raw.github.com/eiffelqiu/igg/master/doc/screen1.png)
 
 	open 'http://localhost:4567' in browser
+
 ![play impact game usage](https://raw.github.com/eiffelqiu/igg/master/doc/screen3.png)
+
+	$ igg server   ## DO NOT Run in an ImpactJS project folder will NOT start server
+
+![run server error usage](https://raw.github.com/eiffelqiu/igg/master/doc/screen4.png)
+
 
 ### Run Server mode to run weltmeister level editor
 
