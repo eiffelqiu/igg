@@ -5,6 +5,8 @@ source "http://rubygems.org"
 
 gem 'thor', '~> 0.19'
 gem 'sinatra', '~> 1.4'
+gem 'puma', '~> 2.10' 
+# gem 'grape', '~> 0.10'
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 group :development do
