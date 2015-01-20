@@ -53,9 +53,9 @@ class Igg::CLI < Thor
         puts "*" * 80
         puts "Can't start server without impact and weltmeister, you must do as follow"
         puts 
-        puts "1: Copy 'impact' folder to current 'lib' subdirectory.  "
-        puts "2: Copy 'weltmeister' folder to current 'lib' subdirectory. "
-        puts "3: Copy 'weltmeister.html' folder to current directory. "        
+        puts "1: Copy 'impact' folder to current project's 'lib' subdirectory."
+        puts "2: Copy 'weltmeister' folder to current project's 'lib' subdirectory."
+        puts "3: Copy 'weltmeister.html' to current project's root."        
         puts "*" * 80
         exit
       end      

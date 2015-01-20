@@ -4,7 +4,9 @@ Several tools for fast developing an ImpactJS Game, include generators and built
 
 ### Requirement
 
-    Ruby 1.9.x or later (tested)
+    1: Ruby 1.9.x or later (tested)
+    2: ImpactJS (buy your license 99$)
+
 
 ### Installation
 
@@ -21,7 +23,7 @@ Several tools for fast developing an ImpactJS Game, include generators and built
 
 ### Generate an ImpactJS Game project
 
-    $ igg project pong   # default width=320 height=240     	  
+    $ igg project pong   # default width=320 height=240   
 
 ### Generate an ImpactJS Game Level
 
@@ -30,6 +32,18 @@ Several tools for fast developing an ImpactJS Game, include generators and built
 ### Generate an ImpactJS Game Entity
 
     $ igg entity player # default width=16 height=16 
+
+### How to run Igg Server
+
+    # you need 3 steps to run server
+    #
+    # 1: Copy 'impact' folder to current project's 'lib' subdirectory.  
+    # 2: Copy 'weltmeister' folder to current project's 'lib' subdirectory. 
+    # 3: Copy 'weltmeister.html' to current project's root. 
+    #
+    # ImpactJS project directory should look like this    
+![project directory usage](https://raw.github.com/eiffelqiu/igg/master/doc/screen6.png)   
+
 
 ### Run Server mode to play the game
 
