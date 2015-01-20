@@ -21,7 +21,7 @@ Several tools for fast developing an ImpactJS Game, include generators and built
 
 ### Generate an ImpactJS Game project
 
-    $ igg project phone   # default width=320 height=240     	  
+    $ igg project pong   # default width=320 height=240     	  
 
 ### Generate an ImpactJS Game Level
 

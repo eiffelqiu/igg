@@ -9,7 +9,7 @@ module Igg
       		empty_directory "lib/game/levels"
        		template 'builder/templates/level/level.tt', "lib/game/levels/#{@name}.js"
       	else
-      		puts "you are not in an ImpactJS root folder"
+      		puts "you are not in an ImpactJS project root folder"
       	end
 
       end

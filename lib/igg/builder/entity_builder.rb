@@ -10,7 +10,7 @@ module Igg
       		empty_directory "lib/game/entities"
        		template 'builder/templates/entity/entity.tt', "lib/game/entities/#{@name}.js"
       	else
-      		puts "you are not in an ImpactJS root folder"
+      		puts "you are not in an ImpactJS project root folder"
       	end
 
       end
