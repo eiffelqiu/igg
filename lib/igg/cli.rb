@@ -146,13 +146,21 @@ class Igg::CLI < Thor
         File.write("lib/weltmeister/config.js",File.open("lib/weltmeister/config.js",&:read).gsub(".php",""))
         puts 
         puts "*" * 80
-        puts "modified lib/weltmeister/config.js file, remove all '.php' suffix in api call "
+        puts "Server automatically modified lib/weltmeister/config.js file"
+        puts "and removed all '.php' suffix in API of this file"
         puts "*" * 80
-        puts         
+        puts  
+
+        puts 
+        puts "*" * 80
+        puts "Play your game  : http://localhost:4567/"
+        puts "Run weltmeister : http://localhost:4567/weltmeister"
+        puts "*" * 80
+        puts                
         Server.run!
       else
         puts "*" * 60
-        puts "Can't run without impact and weltmeister, you must do as follow"
+        puts "Can't start server without impact and weltmeister, you must do as follow"
         puts 
         puts "1: Copy 'impact' folder to current 'lib' subdirectory.  "
         puts "2: Copy 'weltmeister' folder to current 'lib' subdirectory. "
