@@ -40,11 +40,11 @@ Several tools for fast developing an ImpactJS Game, include generators and built
 	open 'http://localhost:4567' in browser
 
 ![play impact game usage](https://raw.github.com/eiffelqiu/igg/master/doc/screen3.png)
+![index usage](https://raw.github.com/eiffelqiu/igg/master/doc/screen5.png)
 
 	$ igg server   ## DO NOT Run in an ImpactJS project folder will NOT start server
 
 ![run server error usage](https://raw.github.com/eiffelqiu/igg/master/doc/screen4.png)
-
 
 ### Run Server mode to run weltmeister level editor
 
