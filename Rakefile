@@ -22,7 +22,7 @@ Jeweler::Tasks.new do |gem|
   gem.email = "eiffelqiu@qq.com"
   gem.authors = ["eiffel qiu"]
   gem.executables = ['igg']
-  gem.files = Dir.glob('lib/**/*.*')
+  gem.files = Dir.glob('lib/**/*.*') + Dir.glob('VERSION')
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
