@@ -2,6 +2,14 @@
 
 Several tools for fast developing an ImpactJS Game, include generators and built-in server to run the game and weltmeister level editor right in the current project folder without requiring apache http server and PHP configuration.
 
+### Features
+
+    1: generators 
+       a: create ImpactJS game project skeloton, containing toggleDebug button in index.html
+       b: create ImpactJS level snippet
+       c: create ImpactJS entity snippet
+    2: built-in http server to boot playing game and weltmeister level editor in current directory
+
 ### Requirement
 
     1: Ruby 1.9.x or later (tested)

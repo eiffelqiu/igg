@@ -23,6 +23,7 @@ module Igg
         copy_file 'builder/templates/project/toggleDebug.js',"#{@name}/js/toggleDebug.js"
 
       	copy_file 'builder/templates/project/04b03.font.png',"#{@name}/media/04b03.font.png"
+        copy_file 'builder/templates/project/levelexit.js', "#{@name}/lib/game/entities/levelexit.js"
         template 'builder/templates/project/main.tt', "#{@name}/lib/game/main.js"
         template 'builder/templates/level/main.js', "#{@name}/lib/game/levels/main.js"
         template 'builder/templates/project/index.html', "#{@name}/index.html"
