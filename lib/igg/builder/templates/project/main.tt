@@ -4,6 +4,7 @@ ig.module(
     .requires(
     'impact.game',
     'impact.font', 
+    'impact.debug.debug',
     'game.levels.main'
 )
     .defines(function () {
