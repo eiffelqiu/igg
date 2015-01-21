@@ -2,14 +2,3 @@
 require 'igg/cli'
 
 Igg::CLI.start
-
-at_exit do
-  if $!.nil? || $!.is_a?(SystemExit) && $!.success?
-  	puts
-    puts 'igg server successfully shut down'
-  else
-    code = $!.is_a?(SystemExit) ? $!.status : 1
-    puts
-    puts "igg server shut down failure with code #{code}"
-  end
-end

@@ -60,6 +60,18 @@ class Igg::CLI < Thor
         puts "*" * 80
         puts                
         Server.run!
+
+        at_exit do
+          if $!.nil? || $!.is_a?(SystemExit) && $!.success?
+            puts
+            puts 'igg server successfully shut down'
+          else
+            code = $!.is_a?(SystemExit) ? $!.status : 1
+            puts
+            puts "igg server shut down failure with code #{code}"
+          end
+        end
+      
       else
         puts "*" * 80
         puts "Can't start server without impact and weltmeister, you must do as follow"
