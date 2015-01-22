@@ -12,7 +12,7 @@ Several tools for fast developing an ImpactJS Game, include generators and built
 
 ### Requirement
 
-    1: Ruby 1.9.x or later (tested)
+    1: Ruby 1.8.7 or later (tested)
     2: ImpactJS (buy your license 99$)
 
 
