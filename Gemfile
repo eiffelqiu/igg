@@ -3,6 +3,7 @@ source "http://rubygems.org"
 # Example:
 #   gem "activesupport", ">= 2.3.5"
 
+gem 'json', '~> 1.8'
 gem 'thor', '~> 0.19'
 gem 'sinatra', '~> 1.4'
 gem 'puma', '~> 2.10' 

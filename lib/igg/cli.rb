@@ -1,12 +1,13 @@
+require 'rubygems'
 require 'sinatra'
 require 'sinatra/base'
 require 'pathname'
 require 'json'
 require 'thor'
-require_relative 'server'
 
-require_relative 'ext/string_extention'
-%w[project entity level].each { |task| require_relative "builder/#{task}_builder" }
+require File.join(File.dirname(__FILE__), 'server')
+require File.join(File.dirname(__FILE__), 'ext/string_extention')
+%w[project entity level].each { |task| require File.join(File.dirname(__FILE__),  "builder/#{task}_builder") }  
 
 LIBDIR = File.expand_path(File.join(File.dirname(__FILE__), '../..', 'lib'))
 ROOTDIR = File.expand_path(File.join(File.dirname(__FILE__), '../..'))
@@ -45,7 +46,9 @@ class Igg::CLI < Thor
     @version = File.open("#{ROOTDIR}/VERSION", "rb").read                                
     if method == 'server' then
       if File.exist?('lib/weltmeister/config.js')
-        File.write("lib/weltmeister/config.js",File.open("lib/weltmeister/config.js",&:read).gsub(".php",""))
+        filename = "lib/weltmeister/config.js"
+        o = File.read(filename) .gsub(".php", "")
+        File.open(filename, "w") { |file| file << o }
         puts 
         puts "*" * 80
         puts "Igg Server #{@version}                   Eiffel Q(eiffelqiu@qq.com)"

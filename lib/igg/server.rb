@@ -6,7 +6,7 @@
 ## I adpated it to run in current impact project folder
 ##
 ########################################################
-
+require 'rubygems'
 require 'sinatra'
 
 class Server < Sinatra::Base
