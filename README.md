@@ -15,10 +15,13 @@ Several tools for fast developing an ImpactJS Game, include generators and built
     1: Ruby 1.8.7 or later (tested)
     2: ImpactJS (buy your license 99$)
 
-
 ### Installation
 
     $ gem install igg 
+
+### Upgrade
+
+    $ gem update igg     
 
 ### Help
 
