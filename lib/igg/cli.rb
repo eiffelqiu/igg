@@ -5,7 +5,8 @@ require 'pathname'
 require 'json'
 require 'thor'
 
-require File.join(File.dirname(__FILE__), 'server')
+require File.join(File.dirname(__FILE__), 'server/api')
+require File.join(File.dirname(__FILE__), 'server/server')
 require File.join(File.dirname(__FILE__), 'ext/string_extention')
 %w[project entity level].each { |task| require File.join(File.dirname(__FILE__),  "builder/#{task}_builder") }  
 
@@ -61,8 +62,9 @@ class Igg::CLI < Thor
         puts 
         puts "Igg source code : https://github.com/eiffelqiu/igg"
         puts "*" * 80
-        puts                
-        Server.run!
+        puts   
+
+        Igg::Server.run!
 
         at_exit do
           if $!.nil? || $!.is_a?(SystemExit) && $!.success?
