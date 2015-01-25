@@ -7,6 +7,7 @@ gem 'json', '~> 1.8'
 gem 'thor', '~> 0.19'
 gem 'sinatra', '~> 1.4'
 gem 'puma', '~> 2.10' 
+gem 'colorize', '~> 0.7'
 # gem 'grape', '~> 0.10'
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.

@@ -4,6 +4,8 @@ require 'sinatra/base'
 require 'pathname'
 require 'json'
 require 'thor'
+require 'colorize'
+require File.join(File.dirname(__FILE__), 'conf')
 
 require File.join(File.dirname(__FILE__), 'server/api')
 require File.join(File.dirname(__FILE__), 'server/server')
@@ -51,17 +53,17 @@ class Igg::CLI < Thor
         o = File.read(filename) .gsub(".php", "")
         File.open(filename, "w") { |file| file << o }
         puts 
-        puts "*" * 80
-        puts "Igg Server #{@version}                   Eiffel Q(eiffelqiu@qq.com)"
+        puts "*" * Igg::Conf::MAXSIZE
+        puts Igg::Conf::PROMPT1.colorize(:color => :red, :background => :white)
+        puts "*" * Igg::Conf::MAXSIZE
         puts 
-        puts "Server automatically modified lib/weltmeister/config.js file"
-        puts "and removed all '.php' suffix in API of this file"
+        puts Igg::Conf::PROMPT2
         puts 
-        puts "Play your game  : http://localhost:4567/"
-        puts "Run weltmeister : http://localhost:4567/weltmeister"
+        puts Igg::Conf::PROMPT3
+        puts Igg::Conf::PROMPT4
         puts 
-        puts "Igg source code : https://github.com/eiffelqiu/igg"
-        puts "*" * 80
+        puts Igg::Conf::PROMPT5
+        puts "*" * Igg::Conf::MAXSIZE
         puts   
 
         Igg::Server.run!
