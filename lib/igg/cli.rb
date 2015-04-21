@@ -10,7 +10,8 @@ require File.join(File.dirname(__FILE__), 'conf')
 require File.join(File.dirname(__FILE__), 'server/api')
 require File.join(File.dirname(__FILE__), 'server/server')
 require File.join(File.dirname(__FILE__), 'ext/string_extention')
-%w[project entity level].each { |task| require File.join(File.dirname(__FILE__),  "builder/#{task}_builder") }  
+require File.join(File.dirname(__FILE__), 'ext/file_extention')
+%w[project entity level minify].each { |task| require File.join(File.dirname(__FILE__),  "builder/#{task}_builder") }  
 
 LIBDIR = File.expand_path(File.join(File.dirname(__FILE__), '../..', 'lib'))
 ROOTDIR = File.expand_path(File.join(File.dirname(__FILE__), '../..'))
@@ -26,7 +27,7 @@ class Igg::CLI < Thor
 
   def self.source_root; File.dirname(__FILE__) end
 
-  %w[project entity level].each do |type|
+  %w[project entity level minify].each do |type|
     if type == 'entity' 
         method_option :width, :type => :numeric, :default => 16, :required => false, :aliases => "-w", :desc => "width"
         method_option :height, :type => :numeric, :default => 16, :required => false, :aliases => "-h", :desc => "height"
